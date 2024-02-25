@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Huddle landing page with single introductory section
+    </title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              Poppins: ["Poppins, sans-serif"],
+            },
+            colors: {
+              clifford: "#da373d",
+              violet: "hsl(257, 40%, 49%)",
+              softmagenta: "hsl(300, 69%, 71%)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="bg-auto bg-no-repeat bg-center bg-violet flex flex-col items-center justify-center"
+    style="background-image: url(./images/bg-desktop.svg)"
+  >
+    <nav class="container mx-auto flex items-center justify-between pt-2">
+      <img src="./images/logo.svg" alt="Logo" />
+    </nav>
+
+    <div
+      class="container mx-auto flex flex-col items-center px-6 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row overflow-hidden"
+    >
+      <!-- Left Side -->
+      <div class="flex flex-col mt-9 md:w-1/2">
+        <img
+          src="./images/illustration-mockups.svg"
+          alt="Illustration Mockups"
+        />
+      </div>
+
+      <!-- Right Side -->
+      <div class="text-white max-w-sm text-center text-gray-500 ml-4 md:w-1/2">
+        <h1 class="text-2xl font-bold m-6 md:text-3xl">
+          Build The Community Your Fans Will Love
+        </h1>
+        <p class="text-center text-md m-6 md:text-md md:text-left">
+          Huddle re-imagines the way we build communities. You have a voice, but
+          so does your audience. Create connections with your users as you
+          engage in genuine discussion.
+        </p>
+        <a
+          href="#"
+          class="border rounded-full self-baseline px-20 pt-2 p-3 m-5 bg-white text-violet text-md font-normal hover:text-white hover:bg-softmagenta border-violet"
+        >
+          Register
+        </a>
+      </div>
+    </div>
+
+    <!-- Social Media Icons -->
+    <div
+      class="flex items-center justify-between mt-4 mr-4 md:absolute md:bottom-10 md:right-4 md:justify-end"
+    >
+      <ul>
+        <li
+          class="fa fa-facebook text-white w-8 text-center p-2 m-1 border rounded-full hover:text-softmagenta hover:border-softmagenta cursor-pointer"
+        ></li>
+        <li
+          class="fa fa-twitter text-white w-8 text-center p-2 m-1 border rounded-full hover:text-softmagenta hover:border-softmagenta cursor-pointer"
+        ></li>
+        <li
+          class="fa fa-instagram text-white w-8 text-center p-2 m-1 border rounded-full hover:text-softmagenta hover:border-softmagenta cursor-pointer"
+        ></li>
+      </ul>
+    </div>
+
+    <footer>
+      <p class="mt-10 text-sm md:mt-40">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#" class="text-white">Samar Osman</a>.
+      </p>
+    </footer>
+  </body>
+</html>
