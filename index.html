@@ -56,11 +56,11 @@
     </script>
   </head>
   <body
-    class="bg-auto bg-no-repeat bg-center bg-violet flex flex-col items-center justify-center font-Poppins"
+    class="bg-auto bg-no-repeat bg-center bg-violet flex flex-col items-center justify-center font-Poppins min-h-screen"
     style="background-image: url(./images/bg-desktop.svg)"
   >
-    <nav class="container mx-auto flex items-center justify-between pt-2">
-      <img src="./images/logo.svg" alt="Logo" />
+    <nav class="container mx-auto flex items-center justify-between py-10 px-8">
+      <img src="./images/logo.svg" alt="Logo" class="w-32 lg:w-auto" />
     </nav>
 
     <div
@@ -96,10 +96,10 @@
     </div>
 
     <!-- Social Media Icons -->
-    <div
-      class="flex items-center justify-between mt-4 mr-4 md:absolute md:bottom-10 md:right-4 md:justify-end"
-    >
-      <ul>
+    <footer class="">
+      <ul
+        class="flex items-center justify-between gap-6 mt-20 mr-4 md:absolute md:bottom-[-2] md:right-2 md:justify-end"
+      >
         <li
           class="fa fa-facebook text-white w-8 text-center p-2 m-1 border rounded-full hover:text-softmagenta hover:border-softmagenta cursor-pointer"
         ></li>
@@ -110,15 +110,21 @@
           class="fa fa-instagram text-white w-8 text-center p-2 m-1 border rounded-full hover:text-softmagenta hover:border-softmagenta cursor-pointer"
         ></li>
       </ul>
-    </div>
-
-    <footer class="mt-10 text-sm lg:mt-40">
-      <p>
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#" class="text-white">Samar Osman</a>.
-      </p>
     </footer>
+
+    <div class="mt-10 text-sm lg:mt-40">
+      <p class="text-white leading-snug text-center text-sm">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          class="underline"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://tsbsankara.com" class="text-white underline"
+          >Samar Osman</a
+        >.
+      </p>
+    </div>
   </body>
 </html>
